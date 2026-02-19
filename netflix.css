@@ -345,22 +345,29 @@ ul a {
 }
 
 /* मोबाइल के लिए (Phones) */
-@media (max-width: 480px) {
-  .slider {
-    padding: 10px;
-  }
-
-  .card {
-    min-width: 140px; /* मोबाइल पर कार्ड थोड़े छोटे कर दिए ताकि स्क्रीन पर फिट आएं */
-    height: 200px;
-  }
+@media (max-width:600px) {
+    .hero-wrapper h1 {
+        font-size:24px !important;
+        line-height:1.2;
+        padding:0 10px;
+    }
+    .hero-wrapper p{
+        font-size:14px !important;
+        margin:10px 0;
+    }
+    .logo{
+        width:80px !important;
+    }
+    .nav-right button{
+        padding:4px 8px;
+        font-size:12px;
+    }
+    .hero-wrapper{
+        padding:100px 20px;
+    }
 }
+        
 
-/* टैबलेट के लिए (Tablets) */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 20px;
-  }
-}
    
+
 
