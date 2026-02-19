@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JARVIS: Legendary Interface</title>
+    <link rel="stylesheet" href="jarvis.css">
+</head>
+<button id="micBtn" style="position:fixed; bottom:30px; left:50%; transform:translateX(-50%);">
+  🎤 ACTIVATE JARVIS
+</button>
+
+<p id="status" style="text-align:center; margin-top:10px;">
+  Status: STANDBY
+</p>
+
+<script src="jarvis.js"></script>
+<body>
+    
+
+    <div class="scanline"></div>
+    
+    <div class="main-display">
+        <div class="arc-container">
+            <div class="ring-1"></div>
+            <div class="ring-2"></div>
+            <div class="ring-3"></div>
+            <div class="core-glow"></div>
+        </div>
+
+        <div class="side-panel left">
+            <div class="stat-bar"><div class="fill" style="width: 85%;"></div></div>
+            <p>THREAT LEVEL: LOW</p>
+            <div class="stat-bar"><div class="fill" style="width: 40%;"></div></div>
+            <p>OXYGEN: STABLE</p>
+        </div>
+
+        <div class="side-panel right">
+            <p class="glitch" data-text="SYSTEM ACTIVE">SYSTEM ACTIVE</p>
+            <div class="grid-display"></div>
+            <p>MARK 85: STANDBY</p>
+        </div>
+
+        <div class="footer">
+            <span>LOC: 40.7128° N, 74.0060° W</span>
+            <span class="pulse-dot"></span>
+            <span>ENCRYPTED CONNECTION</span>
+        </div>
+    </div>
+</body>
+</html>

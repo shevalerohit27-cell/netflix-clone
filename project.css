@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    font-family: arial;
+
+}
+.navbar{
+    height: 60px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo{
+color: rgb(214, 25, 214) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+.navbr a {
+    color: rgb(176, 40, 176);
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2px 0px  2px 78px;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    
+    
+}
+.nav-cart {
+    font-size: 1.5rem;
+    padding-left: 300px;
+    
+}
+.nav-user{
+    color: black;
+    font-size: 1.5rem;
+
+}
+
+.hero-section{
+    background-image: url("flowerimg.png");
+    background-size: cover;
+    background-color: whitesmoke;
+    
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+
+      color: white;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 14%;
+    margin-bottom: 21%;
+     
+}
+.hero-msg h1{
+    color:black ;
+       font-size: 40px;
+       margin-top: 5rem;
+        
+      
+}
+.hero-msg h2{
+    color: fuchsia;
+    font-size: 25px;
+    padding-bottom: 13px;
+}
+.hero-msg h5{
+    color: lightslategray;
+    margin-top: 13px;
+}
+
+.hero-msg p {
+    color:plum;
+    
+    
+}
+.hero-msg a{
+    text-decoration: none;
+    color: blue;
+}
+
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    flex-wrap: wrap;
+}
+
+
+.box{   
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    font-weight: 700;
+    
+}
+.box-img{
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right:1rem ;
+}
+.box-content p{
+    color: palevioletred;
+}
+.choice{
+    color: lightseagreen;
+    text-align: center;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+
+

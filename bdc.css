@@ -1,0 +1,18 @@
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; }
+        header { background-color: #232f3e; color: white; padding: 25px 10%; text-align: center; }
+        
+        .event-box { border: 2px solid #febd69; background: #fffcf5; padding: 20px; margin: 20px 0; border-radius: 10px; }
+        .back-link { display: inline-block; margin-top: 20px; color: #007185; text-decoration: none; font-weight: bold; }
+        h1, h2 { color: #131921; }
+
+        .container {
+             background: white; 
+            margin: 20px auto;
+             width:2000px;
+             height: 300px;
+              padding: 40px;
+               border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                 background-image: url('image.jpeg');
+                 background-size: cover;
+                 }

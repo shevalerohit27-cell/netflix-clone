@@ -1,0 +1,46 @@
+/* Main Container */
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slider setup (Cylinder formation) */
+.banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite; /* Slider ko ghumane ke liye */
+}
+
+/* Har ek image item ki position */
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+        translateZ(550px); /* Ye images ko center se door dhakelta hai */
+}
+
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+/* Rotation Animation */
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}

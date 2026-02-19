@@ -1,0 +1,18 @@
+.loder{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #9A8873;
+    border-top: 10PX solid #3A2618;
+    animation: spinAnimated 1s ease-in 0s infinite normal;
+
+}
+@keyframes spinAnimated {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+    
+}

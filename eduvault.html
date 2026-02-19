@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVault | College Notes Hub</title>
+    <link rel="stylesheet" href="eduvault.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-area">
+            <img src="clglogo.png" alt="Logo" class="logo"> <span class="brand-name">EduVault</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="college-text">
+            <h3 class="line1">KOYNA EDUCATION SOCIETY</h3>
+            <h1 class="line2">BALASAHEB DESAI COLLEGE, PATAN</h1>
+            </div>
+        
+        <h1>Welcome to <span class="highlight">EduVault</span></h1>
+        <p>Aapke college ke saare notes, previous exam quetion paper ek hi jagah par.</p>
+        <button class="btn-primary" onclick="scrollToNotes()">View Notes</button>
+    </header>
+
+    <section id="notes" class="notes-container">
+        <h2>Select Your Department</h2>
+        <div class="grid">
+            <div class="card" onclick="window.location.href='bsc.html'">
+                <i class="fas fa-flask"></i>
+                <h3>BSC</h3>
+            </div>
+            <div class="card" onclick="showSubject('Commerce')">
+                <i class="fas fa-chart-line"></i>
+                <h3>BCOM</h3>
+            </div>
+  
+            <div class="card" onclick="window.location.href='ba.html'">
+                <i class="fas fa-paint-brush"></i>
+                <h3>BA</h3>
+            </div>
+               <div class="card" onclick="showSubject('Bcom IT')">
+                <i class="fas fa-database"></i>
+                <h3>Bcom IT</h3>
+            </div>
+
+                      <div class="card" onclick="showSubject('B.Sc computer Science')">
+                <i class="fas fa-microchip"></i>
+                <h3>B.Sc computer Science</h3>
+            </div>
+            
+                      <div class="card" onclick="showSubject('BCA')">
+                <i class="fas fa-laptop-code"></i>
+                <h3>BCA</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EduVault | Created for My College Students</p>
+    </footer>
+
+    <script src="edvault.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc FY Subjects | EduVault</title>
+    <link rel="stylesheet" href="eduvault.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .subject-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; }
+        .subject-card { background: white; padding: 30px; border-radius: 15px; text-align: center; cursor: pointer; border-bottom: 5px solid #003366; transition: 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .subject-card:hover { transform: translateY(-10px); background: #f0faff; }
+        .subject-card i { font-size: 3rem; color: #003366; margin-bottom: 15px; }
+        h2 { text-align: center; margin-top: 30px; color: #003366; }
+    </style>
+</head>
+<body>
+
+    <header class="hero" style="padding: 30px; text-align: center; background: #003366; color: white;">
+        <h1>B.Sc. First Year (FY)</h1>
+        <p>Apna Subject Select Karein</p>
+    </header>
+
+    <h2>Select Your Subject</h2>
+
+    <div class="subject-grid">
+        <div class="subject-card" onclick="window.location.href='physics-fy-material.html'">
+            <i class="fas fa-atom"></i>
+            <h3>Physics</h3>
+        </div>
+
+        <div class="subject-card" onclick="window.location.href='chem-fy-material.html'">
+            <i class="fas fa-vials"></i>
+            <h3>Chemistry</h3>
+        </div>
+
+        <div class="subject-card" onclick="window.location.href='maths-fy-material.html'">
+            <i class="fas fa-square-root-alt"></i>
+            <h3>Mathematics</h3>
+        </div>
+    </div>
+
+    <center><a href="bsc.html" style="text-decoration: none; color: #003366; font-weight: bold;">← Back to Years</a></center>
+
+</body>
+</html>
