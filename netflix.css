@@ -345,7 +345,7 @@ ul a {
 }
 
 /* मोबाइल के लिए बिल्कुल सही और फुल स्क्रीन डिज़ाइन */
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   body {
     overflow-x: hidden; /* स्क्रीन को साइड में हिलने से रोकेगा */
     width: 100% !important;
@@ -395,5 +395,6 @@ ul a {
     height: 45px !important;
   }
 }
+
 
 
