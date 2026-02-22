@@ -391,11 +391,22 @@ ul a {
   }
 
   .hero-wrapper button {
-    width: 180px !important;
+    width: 140px !important;
     height: 50px !important;
     font-size: 18px !important;
     background-color: #e50914 !important;
     border-radius: 4px !important;
   }
+    .foot-panel2{
+         background-color:black;
+    color: #ffffffb3;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    
+    }
 }
+
 
