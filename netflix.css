@@ -346,67 +346,52 @@ ul a {
 
 /* मोबाइल के लिए बिल्कुल सही और फुल स्क्रीन डिज़ाइन */
 @media (max-width: 600px) {
-  /* बैकग्राउंड इमेज को फुल स्क्रीन करने के लिए */
-  .header {
-    height: 100vh !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
-
-  /* कंटेंट को सेंटर में लाने के लिए */
-  .hero-wrapper {
-    width: 100% !important;
-    padding: 0 20px !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 80% !important;
-  }
-
-  .hero-wrapper h1 {
-    font-size: 28px !important; /* बड़ी और साफ़ हेडिंग */
-    font-weight: 700 !important;
-    margin-bottom: 15px !important;
-  }
-
-  .hero-wrapper p {
-    font-size: 16px !important;
-    margin-bottom: 10px !important;
-  }
-
-  /* ईमेल बॉक्स और बटन को असली नेटफ्लिक्स जैसा दिखाने के लिए */
-  form {
-    width: 100% !important;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  input[type="email"] {
-    width: 100% !important;
-    height: 55px !important;
-    border-radius: 4px !important;
-  }
-
-  .hero-wrapper button {
-    width: 140px !important;
-    height: 50px !important;
-    font-size: 18px !important;
-    background-color: #e50914 !important;
-    border-radius: 4px !important;
-  }
-    .foot-panel2{
-         background-color:black;
-    color: #ffffffb3;
-    height: auto;
-    display:flex;
-    justify-content: center;
-    text-transform: capitalize;
-    text-decoration: underline;
-    
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    
+    .hero-wrapper h1 {
+        font-size: 1.5rem !important; /* Text bada na ho jaye */
+    }
+
+    .mail {
+        flex-direction: column; /* Input aur Button ek ke niche ek */
+    }
+    .mail input {
+        width: 90% !important; /* Mobile screen ke hisab se width */
+        margin-bottom: 10px;    /* Button aur input ke beech gap */
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .mail a {
+        width: 90%;
+        text-align: center;
+        padding: 15px 0;
+        display: block;
+    }
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Ya center agar aapko beech mein chahiye */
+        padding-top: 80px; /* Logo se thoda niche lane ke liye */
+        width: 100% !important;
+    }
+    .slider {
+        display: flex;
+        overflow-x: auto; /* Side mein scroll karne ke liye */
+        gap: 15px;
+        padding: 20px 10px;
+        scroll-behavior: smooth;
+    }
+
+    /* Scrollbar ko thoda saaf dikhane ke liye (optional) */
+    .slider::-webkit-scrollbar {
+        display: none; /* Scrollbar hide kar dega lekin scroll hoga */
+    }
+    
 }
-
-
