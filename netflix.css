@@ -104,7 +104,6 @@ body {
     padding: 20px 4vw; 
     width: 100%;        
     margin-top: 30px;
-    overflow: hidden;
    
 }
     
@@ -278,10 +277,9 @@ footer{
     background-color: black;
     color: #ffffffb3;
     height: auto;
-    padding-left: 230px;
+    padding-left: 400px;
     font-size: large;
     font-size: 0.95rem;
-    
 }
 .foot-panel1 a{
     color: #ffffffb3;
@@ -292,7 +290,7 @@ footer{
     background-color:black;
     color: #ffffffb3;
     height: auto;
-    align-items: center;
+    padding-left: 220px;
     display:flex;
     justify-content: space-evenly;
     text-transform: capitalize;
@@ -315,14 +313,14 @@ ul a {
     color: white;
     height: auto;
     margin-top: 50px;
-    margin-left: 230px;
+    margin-left: 400px;
     font-size:medium;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .pages{
     padding-top: 30px;
-    padding-left: 230px;
+    padding-left: 400px;
     height: auto;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
@@ -337,9 +335,7 @@ ul a {
     text-transform: capitalize;
     padding-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-
-    align-items: center;
+    padding-left: 400px;
     font-size: small;
 
 
@@ -348,23 +344,54 @@ ul a {
     color: #448ef4;
 }
 
-/* मोबाइल के लिए (Phones) */
-@media (max-width: 480px) {
-  .slider {
-    padding: 10px;
-  }
+/* मोबाइल के लिए बिल्कुल सही और फुल स्क्रीन डिज़ाइन */
+@media (max-width: 600px) {
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-wrapper h1 {
+        font-size: 1.5rem !important; /* Text bada na ho jaye */
+    }
 
-  .card {
-    min-width: 140px; /* मोबाइल पर कार्ड थोड़े छोटे कर दिए ताकि स्क्रीन पर फिट आएं */
-    height: 200px;
-  }
+    .mail {
+        flex-direction: column; /* Input aur Button ek ke niche ek */
+    }
+    .mail input {
+        width: 90% !important; /* Mobile screen ke hisab se width */
+        margin-bottom: 10px;    /* Button aur input ke beech gap */
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .mail a {
+        width: 90%;
+        text-align: center;
+        padding: 15px 0;
+        display: block;
+    }
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Ya center agar aapko beech mein chahiye */
+        padding-top: 80px; /* Logo se thoda niche lane ke liye */
+        width: 100% !important;
+    }
+    .slider {
+        display: flex;
+        overflow-x: auto; /* Side mein scroll karne ke liye */
+        gap: 15px;
+        padding: 20px 10px;
+        scroll-behavior: smooth;
+    }
+
+    /* Scrollbar ko thoda saaf dikhane ke liye (optional) */
+    .slider::-webkit-scrollbar {
+        display: none; /* Scrollbar hide kar dega lekin scroll hoga */
+    }
+    
 }
-
-/* टैबलेट के लिए (Tablets) */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 20px;
-  }
-}
-   
-
